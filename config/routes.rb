@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
  root "articles#home"
- resources :articles 
+ resources :articles do 
+    resources :comments 
 end
